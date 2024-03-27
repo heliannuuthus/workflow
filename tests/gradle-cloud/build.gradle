@@ -1,5 +1,6 @@
 plugins {
     id "java"
+    id "jacoco"
     id "org.springframework.boot" version "3.2.3"
     id "io.spring.dependency-management" version "1.1.4"
     id "org.springdoc.openapi-gradle-plugin" version "1.8.0"
@@ -8,9 +9,7 @@ plugins {
     id "io.freefair.lombok" version "8.6"
 }
 
-
-apply from: "../../gradle/cloud.gradle"
-
+apply from: "./cloud.gradle"
 
 repositories {
     maven { url "https://maven.aliyun.com/repository/public" }
