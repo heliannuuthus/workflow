@@ -9,7 +9,7 @@ plugins {
     id "io.freefair.lombok" version "8.6"
 }
 
-apply from: "./cloud.gradle"
+apply from: "../../gradle/cloud.gradle"
 
 repositories {
     maven { url "https://maven.aliyun.com/repository/public" }
